@@ -2436,14 +2436,14 @@ img{max-width:100%}
           <div class="stu-row">
             <div class="sa" style="background:linear-gradient(140deg,#e8821e,#f6b24a);color:#3a2400">A</div>
             <div class="si"><b>Aarti Ramesh Pawar</b><small>B.Com · Year 2 · Pune</small></div>
-            <div class="smeta"><span class="pill blue"><span class="pdot"></span>Submitted</span><span class="sc">3 scholarships</span></div>
+            <div class="smeta"><span class="pill blue"><span class="pdot"></span>Submitted</span><span class="sc">4 scholarships</span></div>
             <svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
           </div>
         </div>
         <div class="stu-row" onclick="go('f-student')" style="cursor:pointer">
           <div class="sa" style="background:linear-gradient(140deg,#0f857a,#0a3f3a)">S</div>
           <div class="si"><b>Suresh Jadhav</b><small>Class 12 · Nashik</small></div>
-          <div class="smeta"><span class="pill amber"><span class="pdot"></span>Documents Pending</span><span class="sc">2 scholarships</span></div>
+          <div class="smeta"><span class="pill amber"><span class="pdot"></span>Eligibility Identified</span><span class="sc">2 scholarships</span></div>
           <svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
         </div>
 
@@ -2458,7 +2458,7 @@ img{max-width:100%}
 
         <div class="search" style="max-width:none;margin-bottom:12px">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
-          <input placeholder="Search by Name + DOB or Mobile (to avoid duplicates)…" />
+          <input placeholder="Search by name…" oninput="stuQuery=this.value.trim().toLowerCase(); applyStu();" />
         </div>
 
         <!-- working date filter -->
@@ -2476,10 +2476,10 @@ img{max-width:100%}
           <span class="tagk chip on" style="padding:8px 14px" onclick="filterStu('all',this)">All (10)</span>
           <span class="tagk chip" id="fPendingChip" style="padding:8px 14px" onclick="go('f-approvals')">Pending Approval (2)</span>
           <span class="tagk chip" style="padding:8px 14px" onclick="filterStu('onboarded',this)">Onboarded (2)</span>
-          <span class="tagk chip" style="padding:8px 14px" onclick="filterStu('documents',this)">Documents Pending (2)</span>
+          <span class="tagk chip" style="padding:8px 14px" onclick="filterStu('eligibility',this)">Eligibility Identified (2)</span>
+          <span class="tagk chip" style="padding:8px 14px" onclick="filterStu('doccomplete',this)">Documents Complete (0)</span>
           <span class="tagk chip" style="padding:8px 14px" onclick="filterStu('submitted',this)">Submitted (2)</span>
-          <span class="tagk chip" style="padding:8px 14px" onclick="filterStu('approved',this)">Approved (2)</span>
-          <span class="tagk chip" style="padding:8px 14px" onclick="filterStu('disbursed',this)">Disbursed (2)</span>
+          <span class="tagk chip" style="padding:8px 14px" onclick="filterStu('decision',this)">Decision (4)</span>
         </div>
 
         <div class="listbar"><span class="lbsel"></span><span class="cnt"><b>10</b> Students</span><div class="lb-tools"><button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18M6 12h12M10 19h4"/></svg>Filter</button><button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h13M3 12h9M3 18h5M18 9l3 3-3 3"/></svg>Sort</button><button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></button></div></div>
@@ -2487,19 +2487,19 @@ img{max-width:100%}
           <div class="stu-row" data-status="submitted" data-date="2026-04-12" onclick="go('f-student')">
             <div class="sa" style="background:linear-gradient(140deg,#e8821e,#f6b24a);color:#3a2400">A</div>
             <div class="si"><b>Aarti Ramesh Pawar</b><small>SMV-2026-01182 · B.Com Year 2 · Pune · Onboarded 12 Apr</small></div>
-            <div class="smeta"><span class="pill blue"><span class="pdot"></span>Submitted</span><span class="sc">3 scholarships · 6/8 docs</span></div>
+            <div class="smeta"><span class="pill blue"><span class="pdot"></span>Submitted</span><span class="sc">4 scholarships · 5/9 docs</span></div>
             <svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
           </div>
-          <div class="stu-row" data-status="documents" data-date="2026-04-18" onclick="go('f-student')">
+          <div class="stu-row" data-status="eligibility" data-date="2026-04-18" onclick="go('f-student')">
             <div class="sa" style="background:linear-gradient(140deg,#0f857a,#0a3f3a)">S</div>
             <div class="si"><b>Suresh Jadhav</b><small>SMV-2026-01190 · Class 12 · Nashik · Onboarded 18 Apr</small></div>
-            <div class="smeta"><span class="pill amber"><span class="pdot"></span>Documents Pending</span><span class="sc">2 scholarships · 4/7 docs</span></div>
+            <div class="smeta"><span class="pill amber"><span class="pdot"></span>Eligibility Identified</span><span class="sc">2 scholarships · 4/7 docs</span></div>
             <svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
           </div>
-          <div class="stu-row" data-status="disbursed" data-date="2026-03-20" onclick="go('f-student')">
+          <div class="stu-row" data-status="decision" data-date="2026-03-20" onclick="go('f-student')">
             <div class="sa" style="background:linear-gradient(140deg,#2f6fd6,#1c4ea8)">P</div>
             <div class="si"><b>Priya Sonawane</b><small>SMV-2026-01205 · B.Sc Year 1 · Pune · Onboarded 20 Mar</small></div>
-            <div class="smeta"><span class="pill green"><span class="pdot"></span>Disbursed</span><span class="sc">1 scholarship · ₹42,000</span></div>
+            <div class="smeta"><span class="pill green"><span class="pdot"></span>Decision · Disbursed</span><span class="sc">1 scholarship · ₹42,000</span></div>
             <svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
           </div>
           <div class="stu-row" data-status="onboarded" data-date="2026-06-01" onclick="go('f-student')">
@@ -2508,16 +2508,16 @@ img{max-width:100%}
             <div class="smeta"><span class="pill grey"><span class="pdot"></span>Onboarded</span><span class="sc">Eligibility identified</span></div>
             <svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
           </div>
-          <div class="stu-row" data-status="approved" data-date="2026-04-05" onclick="go('f-student')">
+          <div class="stu-row" data-status="decision" data-date="2026-04-05" onclick="go('f-student')">
             <div class="sa" style="background:linear-gradient(140deg,#0f857a,#0a3f3a)">S</div>
             <div class="si"><b>Sneha Patil</b><small>SMV-2026-01177 · B.A Year 3 · Pune · Onboarded 5 Apr</small></div>
-            <div class="smeta"><span class="pill teal"><span class="pdot"></span>Approved</span><span class="sc">1 scholarship · ₹50,000</span></div>
+            <div class="smeta"><span class="pill teal"><span class="pdot"></span>Decision · Approved</span><span class="sc">1 scholarship · ₹50,000</span></div>
             <svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
           </div>
-          <div class="stu-row" data-status="documents" data-date="2026-05-22" onclick="go('f-student')">
+          <div class="stu-row" data-status="eligibility" data-date="2026-05-22" onclick="go('f-student')">
             <div class="sa" style="background:linear-gradient(140deg,#e8821e,#f6b24a);color:#3a2400">I</div>
             <div class="si"><b>Imran Shaikh</b><small>SMV-2026-01230 · Diploma Year 1 · Pune · Onboarded 22 May</small></div>
-            <div class="smeta"><span class="pill amber"><span class="pdot"></span>Documents Pending</span><span class="sc">2 scholarships · 3/6 docs</span></div>
+            <div class="smeta"><span class="pill amber"><span class="pdot"></span>Eligibility Identified</span><span class="sc">2 scholarships · 3/6 docs</span></div>
             <svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
           </div>
           <div class="stu-row" data-status="submitted" data-date="2026-05-10" onclick="go('f-student')">
@@ -2532,16 +2532,16 @@ img{max-width:100%}
             <div class="smeta"><span class="pill grey"><span class="pdot"></span>Onboarded</span><span class="sc">Eligibility identified</span></div>
             <svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
           </div>
-          <div class="stu-row" data-status="disbursed" data-date="2026-02-28" onclick="go('f-student')">
+          <div class="stu-row" data-status="decision" data-date="2026-02-28" onclick="go('f-student')">
             <div class="sa" style="background:linear-gradient(140deg,#0f857a,#0a3f3a)">A</div>
             <div class="si"><b>Asha Kamble</b><small>SMV-2026-01150 · B.Sc Year 2 · Pune · Onboarded 28 Feb</small></div>
-            <div class="smeta"><span class="pill green"><span class="pdot"></span>Disbursed</span><span class="sc">2 scholarships · ₹71,000</span></div>
+            <div class="smeta"><span class="pill green"><span class="pdot"></span>Decision · Disbursed</span><span class="sc">2 scholarships · ₹71,000</span></div>
             <svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
           </div>
-          <div class="stu-row" data-status="approved" data-date="2026-04-25" onclick="go('f-student')">
+          <div class="stu-row" data-status="decision" data-date="2026-04-25" onclick="go('f-student')">
             <div class="sa" style="background:linear-gradient(140deg,#2f6fd6,#1c4ea8)">V</div>
             <div class="si"><b>Vikram Jadhav</b><small>SMV-2026-01199 · B.E Year 2 · PCMC · Onboarded 25 Apr</small></div>
-            <div class="smeta"><span class="pill teal"><span class="pdot"></span>Approved</span><span class="sc">1 scholarship · ₹62,000</span></div>
+            <div class="smeta"><span class="pill teal"><span class="pdot"></span>Decision · Approved</span><span class="sc">1 scholarship · ₹62,000</span></div>
             <svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
           </div>
           <div class="empty" id="stuEmpty" style="display:none">
@@ -2604,6 +2604,7 @@ img{max-width:100%}
             <a href="#sec-docs"><span class="anum">6</span>Documents</a>
             <a href="#sec-socio"><span class="anum">7</span>Socio-economic</a>
             <a href="#sec-consent"><span class="anum">8</span>Aspirations &amp; Consent</a>
+              <a href="#sec-assign"><span class="anum">9</span>Fellow assignment</a>
           </aside>
 
           <!-- ===== Form body (single-scroll, no Continue buttons) ===== -->
@@ -2874,7 +2875,7 @@ img{max-width:100%}
 
             <!-- Sticky bottom action bar -->
             <div class="dt-actions">
-              <div class="dt-act-meta">Section <b id="dtSecCur">1</b> of 8 · all sections on one page</div>
+              <div class="dt-act-meta">Section <b id="dtSecCur">1</b> of <span class="dt-sec-tot">9</span> · all sections on one page</div>
               <div class="dt-act-btns">
                 <button class="btn btn-ghost btn-sm" onclick="saveDraft(this)">Save draft</button>
                 <button class="btn btn-primary" onclick="onbSubmit()">Submit Onboarding ✓</button>
@@ -3146,7 +3147,7 @@ img{max-width:100%}
               <div class="app-acc-head" onclick="toggleAppAcc(this)">
                 <div class="sr-head">
                   <div class="sr-logo" style="background:linear-gradient(140deg,#0f857a,#0a3f3a)">PM</div>
-                  <div class="sr-name"><b>Post-Matric Scholarship for SC Students</b><small>PMS-2026-0042 · Submitted 18 May · Under Scrutiny</small></div>
+                  <div class="sr-name"><b>Post-Matric Scholarship for SC Students</b><small>MH-PM-2026-44871 · Submitted 28 May · Under Scrutiny</small></div>
                 </div>
                 <span class="pill blue"><span class="pdot"></span>Under Scrutiny</span>
                 <div class="sr-mini" title="Step 4 of 5">
@@ -3386,9 +3387,10 @@ img{max-width:100%}
             <!-- §2 Student Profile -->
             <section class="dt-section" id="sch-student">
               <h3 class="dt-sec-title"><span class="anum">2</span>Student Profile</h3>
-              <div class="dt-sec-lead">Transcribed from the student's onboarding record.</div>
+              <div class="dt-sec-lead">Filled from the student's onboarding record: enter the student's email.</div>
               <div class="dt-grid">
-                <div class="q full"><div class="qen">Student's Name <span class="req">*</span></div><input type="text" placeholder="Full name as per Govt ID" /></div>
+                <div class="q full"><div class="qen">Student (onboarding email) <span class="req">*</span></div><input type="email" id="schStudentEmail" list="schStudents" placeholder="Student's email, e.g. aarti.pawar@gmail.com" onchange="schLookup(this.value)" /><datalist id="schStudents"></datalist><div class="qhelp" id="schLookupHelp">The details below fill from the onboarding record.</div></div>
+                <div class="q full"><div class="qen">Student's Name <span class="req">*</span></div><input type="text" id="schName" placeholder="Full name as per Govt ID" /></div>
                 <div class="q"><div class="qen">Date of Birth <span class="req">*</span></div>
                   <div class="dob-inline">
                     <input type="date" id="schDob" />
@@ -3408,13 +3410,13 @@ img{max-width:100%}
                   <div class="qhelp">Validated as Indian 10-digit (6/7/8/9 start).</div>
                 </div>
                 <div class="q"><div class="qen">Category <span class="req">*</span></div>
-                  <select>
+                  <select id="schCategory">
                     <option value="">Select</option>
                     <option>ST</option><option>SC</option><option>VJNT</option><option>OBC</option><option>Minority</option><option>SBC</option><option>SEBC</option><option>EWS</option><option>General</option><option>Other</option>
                   </select>
                 </div>
                 <div class="q"><div class="qen">Annual Income <span class="req">*</span></div>
-                  <select>
+                  <select id="schIncome">
                     <option value="">Select</option>
                     <option>Less than ₹50,000</option>
                     <option>₹50,000 – ₹1 lakh</option>
@@ -3525,7 +3527,7 @@ img{max-width:100%}
                 <div class="q"><div class="qen">Applicant User Name <span class="req">*</span></div><input type="text" placeholder="Username on the portal" style="font-family:'Courier New',monospace" /></div>
                 <div class="q"><div class="qen">Applicant Password <span class="req">*</span></div><div class="cred"><input type="password" placeholder="Portal password" /><span class="eye" onclick="eye(this)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></span></div></div>
                 <div class="q full"><div class="qen">Scheme Name <span class="req">*</span></div>
-                  <select>
+                  <select onchange="var o=this.parentNode.querySelector('.sch-other'); o.style.display=this.value==='Other'?'':'none'; if(this.value==='Other') o.focus();">
                     <option value="">Select scheme…</option>
                     <optgroup label="SC / ST Schemes">
                       <option>Government of India Post-Matric Scholarship</option>
@@ -3566,7 +3568,8 @@ img{max-width:100%}
                       <option>Other</option>
                     </optgroup>
                   </select>
-                  <div class="qhelp">26 schemes grouped by category (Frappe Select with optgroup — much faster than the 26-radio list).</div>
+                  <input class="sch-other" type="text" placeholder="Scheme name exactly as on the government portal" style="display:none;margin-top:8px" />
+                  <div class="qhelp">23 schemes grouped by category, plus <b>Other</b>. Use Other only for a scheme not in the master; the Program Admin reviews it and adds it to the catalogue.</div>
                 </div>
                 <div class="q"><div class="qen">Application ID <span class="req">*</span></div><input type="text" placeholder="Application ID from portal" style="font-family:'Courier New',monospace" /></div>
                 <div class="q"><div class="qen">Application Status <span class="req">*</span></div>
@@ -3931,7 +3934,7 @@ img{max-width:100%}
         <div class="card" style="margin-bottom:12px"><div class="sch-card">
           <div class="logo" style="background:linear-gradient(140deg,#e8821e,#f6b24a);color:#3a2400">OB</div>
           <div class="body"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><h4>Post Matric Scholarship to OBC Students</h4><button class="btn btn-ghost btn-sm" onclick="editScholarship('Post Matric Scholarship to OBC Students')">Edit</button></div>
-          <div class="meta"><span>Category: OBC</span><span>Income ≤ ₹8L</span><span><b class="amount">₹38,000</b>/yr</span><span>7 docs required</span></div></div>
+          <div class="meta"><span>Category: OBC</span><span>Income ≤ ₹2.5L</span><span><b class="amount">₹38,000</b>/yr</span><span>7 docs required</span></div></div>
         </div></div>
         <div class="card" style="margin-bottom:12px"><div class="sch-card">
           <div class="logo" style="background:linear-gradient(140deg,#2f6fd6,#1c4ea8)">MS</div>
@@ -3949,7 +3952,7 @@ img{max-width:100%}
       <section class="screen" id="a-students">
         <div class="page-h"><div class="eyebrow">Manage</div><h1>All Students</h1><p>Every student across all Fellows (480). Filter by stage and Fellow.</p></div>
         <div class="filterbar">
-          <select onchange="filterAStu()" id="aStuStage"><option value="all">All stages</option><option value="onboarded">Onboarded</option><option value="documents">Documents Pending</option><option value="submitted">Submitted</option><option value="approved">Approved · funds awaited</option><option value="disbursed">Approved · Disbursed</option></select>
+          <select onchange="filterAStu()" id="aStuStage"><option value="all">All stages</option><option value="onboarded">Onboarded</option><option value="eligibility">Eligibility Identified</option><option value="doccomplete">Documents Complete</option><option value="submitted">Submitted</option><option value="decision">Decision</option></select>
           <select onchange="filterAStu()" id="aStuFellow"><option value="all">All Fellows</option><option value="Rahul More">Rahul More</option><option value="Sandip K">Sandip K</option><option value="Dhanashree O">Dhanashree O</option></select>
         </div>
         <div class="listbar"><span class="lbsel"></span><span class="cnt"><b>480</b> Students</span><div class="lb-tools"><button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18M6 12h12M10 19h4"/></svg>Filter</button><button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h13M3 12h9M3 18h5M18 9l3 3-3 3"/></svg>Sort</button><button>Assign</button><button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></button></div></div>
@@ -3957,10 +3960,10 @@ img{max-width:100%}
           <thead><tr><th>Student</th><th>Fellow</th><th>Stage</th><th class="num">Scholarships</th></tr></thead>
           <tbody>
             <tr data-stage="submitted" data-fellow="Rahul More" onclick="goStudent(this)"><td><div class="who"><span class="sa" style="background:linear-gradient(140deg,#e8821e,#f6b24a);color:#3a2400">A</span>Aarti Pawar</div></td><td>Rahul More</td><td><span class="pill blue"><span class="pdot"></span>Submitted</span></td><td class="num">3</td></tr>
-            <tr data-stage="documents" data-fellow="Rahul More" onclick="goStudent(this)"><td><div class="who"><span class="sa" style="background:linear-gradient(140deg,#0f857a,#0a3f3a)">S</span>Suresh Jadhav</div></td><td>Rahul More</td><td><span class="pill amber"><span class="pdot"></span>Documents Pending</span></td><td class="num">2</td></tr>
-            <tr data-stage="approved" data-fellow="Sandip K" onclick="goStudent(this)"><td><div class="who"><span class="sa" style="background:linear-gradient(140deg,#2f6fd6,#1c4ea8)">S</span>Sneha Patil</div></td><td>Sandip K</td><td><span class="pill teal"><span class="pdot"></span>Approved</span></td><td class="num">1</td></tr>
-            <tr data-stage="disbursed" data-fellow="Dhanashree O" onclick="goStudent(this)"><td><div class="who"><span class="sa" style="background:linear-gradient(140deg,#7a5cd0,#5538a8)">A</span>Asha Kamble</div></td><td>Dhanashree O</td><td><span class="pill green"><span class="pdot"></span>Disbursed</span></td><td class="num">2</td></tr>
-            <tr data-stage="documents" data-fellow="Sandip K" onclick="goStudent(this)"><td><div class="who"><span class="sa" style="background:linear-gradient(140deg,#e8821e,#f6b24a);color:#3a2400">I</span>Imran Shaikh</div></td><td>Sandip K</td><td><span class="pill amber"><span class="pdot"></span>Documents Pending</span></td><td class="num">2</td></tr>
+            <tr data-stage="eligibility" data-fellow="Rahul More" onclick="goStudent(this)"><td><div class="who"><span class="sa" style="background:linear-gradient(140deg,#0f857a,#0a3f3a)">S</span>Suresh Jadhav</div></td><td>Rahul More</td><td><span class="pill amber"><span class="pdot"></span>Eligibility Identified</span></td><td class="num">2</td></tr>
+            <tr data-stage="decision" data-fellow="Sandip K" onclick="goStudent(this)"><td><div class="who"><span class="sa" style="background:linear-gradient(140deg,#2f6fd6,#1c4ea8)">S</span>Sneha Patil</div></td><td>Sandip K</td><td><span class="pill teal"><span class="pdot"></span>Decision · Approved</span></td><td class="num">1</td></tr>
+            <tr data-stage="decision" data-fellow="Dhanashree O" onclick="goStudent(this)"><td><div class="who"><span class="sa" style="background:linear-gradient(140deg,#7a5cd0,#5538a8)">A</span>Asha Kamble</div></td><td>Dhanashree O</td><td><span class="pill green"><span class="pdot"></span>Decision · Disbursed</span></td><td class="num">2</td></tr>
+            <tr data-stage="eligibility" data-fellow="Sandip K" onclick="goStudent(this)"><td><div class="who"><span class="sa" style="background:linear-gradient(140deg,#e8821e,#f6b24a);color:#3a2400">I</span>Imran Shaikh</div></td><td>Sandip K</td><td><span class="pill amber"><span class="pdot"></span>Eligibility Identified</span></td><td class="num">2</td></tr>
             <tr data-stage="onboarded" data-fellow="Dhanashree O" onclick="goStudent(this)"><td><div class="who"><span class="sa" style="background:linear-gradient(140deg,#0f857a,#0a3f3a)">G</span>Ganesh Pawar</div></td><td>Dhanashree O</td><td><span class="pill grey"><span class="pdot"></span>Onboarded</span></td><td class="num">0</td></tr>
           </tbody>
         </table></div>
@@ -4174,7 +4177,7 @@ img{max-width:100%}
               <div class="app-acc-head" onclick="toggleAppAcc(this)">
                 <div class="sr-head">
                   <div class="sr-logo" style="background:linear-gradient(140deg,#0f857a,#0a3f3a)">PM</div>
-                  <div class="sr-name"><b>Post-Matric Scholarship for SC Students</b><small>PMS-2026-0042 · Submitted 18 May · Under Scrutiny on portal</small></div>
+                  <div class="sr-name"><b>Post-Matric Scholarship for SC Students</b><small>MH-PM-2026-44871 · Submitted 28 May · Under Scrutiny on portal</small></div>
                 </div>
                 <span class="pill blue"><span class="pdot"></span>Under Scrutiny</span>
                 <div class="sr-mini" title="Step 4 of 5">
@@ -4535,6 +4538,21 @@ function cloneOnbForm(prefix){
   clone.querySelectorAll('[id]').forEach(function(el){ el.id=prefix+el.id; });
   clone.querySelectorAll('[name]').forEach(function(el){ el.name=prefix+el.name; });   // isolate radio/checkbox groups from other copies
   clone.querySelectorAll('.dt-anchors a[href^="#"]').forEach(function(a){ a.setAttribute('href','#'+prefix+a.getAttribute('href').slice(1)); });
+  // Section 9 (Fellow assignment) is a Fellow decision: never shown on the student's own copies.
+  // On the approval review it defaults to the approving Fellow, who can hand the student to another Fellow.
+  if(prefix==='s_' || prefix==='myonb_'){
+    var sec=clone.querySelector('#'+prefix+'sec-assign'); if(sec) sec.remove();
+    var tab=clone.querySelector('.dt-anchors a[href="#'+prefix+'sec-assign"]'); if(tab) tab.remove();
+  } else {
+    var sel=clone.querySelector('#'+prefix+'onbAssignFellow');
+    if(sel){
+      var me=hrFellow();
+      sel.innerHTML=CAMP_FELLOWS.map(function(f){ return '<option'+(f===me?' selected':'')+'>'+f+'</option>'; }).join('');
+      var lead=clone.querySelector('#'+prefix+'onbAssignLead'); if(lead) lead.textContent='Assigned to you on approval. Change it if another Fellow should own this student.';
+      var help=clone.querySelector('#'+prefix+'onbAssignHelp'); if(help) help.textContent='Self-submitted forms have no Fellow yet; the approving Fellow is the default.';
+    }
+  }
+  var tot=clone.querySelector('.dt-sec-tot'); if(tot) tot.textContent=clone.querySelectorAll('.dt-section').length;
   return clone;
 }
 // Wire the interactive bits of a cloned onboarding form (gender master, DOB age, mobile chip, doc-status, anchor scroll).
@@ -4710,6 +4728,8 @@ function approveOnboarding(id){
       '<svg class="chev2" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>';
     list.insertBefore(row, list.firstChild);
   }
+  var asg=document.getElementById('rev_onbAssignFellow');
+  STUDENT_ASSIGN[s.name]={fellow:(asg&&asg.value)||hrFellow(), camp:'', status:'Assigned'};
   bumpStudentCounts();
   delete PENDING_ONBOARDINGS[id];
   renderApprovalList();
@@ -4974,7 +4994,7 @@ var CASES = [
   {id:'CASE-2026-005', student:'Sneha Patil', av:'S', avStyle:'background:linear-gradient(140deg,#0f857a,#0a3f3a);color:#fff', scheme:'Ambedkar Swadhar Yojana', appId:'MH-AB-2026-11902', fellow:'Rahul More', status:'Application Approved · funds awaited', onHold:false, onHoldReason:'', discarded:false, discardedReason:'', updated:'3 Jun'},
   {id:'CASE-2026-006', student:'Priya Sonawane', av:'P', avStyle:'background:linear-gradient(140deg,#2f6fd6,#1c4ea8);color:#fff', scheme:'GoI Post-Matric', appId:'MH-PM-2026-20551', fellow:'Rahul More', status:'Benefits Received', onHold:false, onHoldReason:'', discarded:false, discardedReason:'', updated:'20 Mar'},
   {id:'CASE-2026-007', student:'Suresh Jadhav', av:'S', avStyle:'background:linear-gradient(140deg,#0f857a,#0a3f3a);color:#fff', scheme:'OBC Post-Matric', appId:'—', fellow:'Rahul More', status:'Ready to Submit', onHold:true, onHoldReason:'Family unreachable since 22 May', discarded:false, discardedReason:'', updated:'1 Mar'},
-  {id:'CASE-2026-008', student:'Aarti Pawar', av:'A', avStyle:'background:linear-gradient(140deg,#e8821e,#f6b24a);color:#3a2400', scheme:'Shahu Maharaj Merit', appId:'MH-SM-2026-77120', fellow:'Rahul More', status:'Re-apply', onHold:false, onHoldReason:'', discarded:false, discardedReason:'', updated:'4 Jun'},
+  {id:'CASE-2026-008', student:'Aarti Pawar', av:'A', avStyle:'background:linear-gradient(140deg,#e8821e,#f6b24a);color:#3a2400', scheme:'Shahu Maharaj Merit', appId:'MH-SM-2026-08812', fellow:'Rahul More', status:'Re-apply', onHold:false, onHoldReason:'', discarded:false, discardedReason:'', updated:'4 Jun'},
   {id:'CASE-2026-009', student:'Imran Shaikh', av:'I', avStyle:'background:linear-gradient(140deg,#e8821e,#f6b24a);color:#3a2400', scheme:'VJNT Post-Matric', appId:'MH-VJ-2026-51004', fellow:'Rahul More', status:'Rejected', onHold:false, onHoldReason:'', discarded:false, discardedReason:'', updated:'6 Jun'},
   {id:'CASE-2026-010', student:'Ravi Khade', av:'R', avStyle:'background:linear-gradient(140deg,#9ca3af,#6b7280);color:#fff', scheme:'Aadhar Seeding (KYC)', appId:'—', fellow:'Rahul More', status:'Eligibility Identified', onHold:false, onHoldReason:'', discarded:true, discardedReason:'Student dropped out 14 May', updated:'12 May'},
   {id:'CASE-2026-011', student:'Sneha Patil', av:'S', avStyle:'background:linear-gradient(140deg,#0f857a,#0a3f3a);color:#fff', scheme:'Post-Matric SC', appId:'MH-PM-2026-33471', fellow:'Sandip K', status:'Benefits Received', onHold:false, onHoldReason:'', discarded:false, discardedReason:'', updated:'10 Feb'},
@@ -5191,7 +5211,7 @@ function sendDocNote(sendBtn, key){
 }
 // Scholarship Application PDF — one file per application (pm/ms/ab/smm), Fellow-attached via the Data Entry form.
 var APP_PDF = {
-  pm: {name:'PMS-2026-0042-submitted.pdf', on:'28 May'}
+  pm: {name:'MH-PM-2026-44871-submitted.pdf', on:'28 May'}
 };
 function renderAppPdf(key, canReplace){
   var f = APP_PDF[key];
@@ -6833,6 +6853,7 @@ function setChip(btn){ btn.parentElement.querySelectorAll('.chip').forEach(c=>c.
 
 // My Students: combined status + date filter
 let stuStatus='all', stuDate='';
+var stuQuery='';
 function filterStu(status,btn){ stuStatus=status; setChip(btn); applyStu(); }
 function filterStuDate(val){ stuDate=val; applyStu(); }
 function applyStu(){
@@ -6840,7 +6861,8 @@ function applyStu(){
   document.querySelectorAll('#stuList .stu-row').forEach(r=>{
     const okS=stuStatus==='all'||r.dataset.status===stuStatus;
     const okD=!stuDate||r.dataset.date===stuDate;
-    const vis=okS&&okD; r.style.display=vis?'':'none'; if(vis)shown++;
+    const nm=r.querySelector('.si b'); const okQ=!stuQuery||(nm&&nm.textContent.toLowerCase().indexOf(stuQuery)>-1);
+    const vis=okS&&okD&&okQ; r.style.display=vis?'':'none'; if(vis)shown++;
   });
   document.getElementById('stuEmpty').style.display=shown?'none':'block';
 }
@@ -6899,7 +6921,20 @@ function pickBranch(el,which){
 }
 
 // ===== Scholarship Data Entry form (Frappe DocType pattern) =====
+// Student lookup (MoM 12-Jun #8): the Fellow enters the student's email and the profile fields fill from
+// the onboarding record. ponytail: only the canonical demo student has a full record in this wireframe.
+function schStudentRecords(){ var r={}; r[MY_ONBOARDING.fields.onbEmail]=MY_ONBOARDING.fields; return r; }
+function schLookup(email){
+  var f=schStudentRecords()[(email||'').trim().toLowerCase()], help=document.getElementById('schLookupHelp');
+  if(!f){ if(help) help.textContent='No onboarded student with this email. Onboard the student first.'; return; }
+  var set=function(id,v){ var el=document.getElementById(id); if(el && v!=null){ el.value=v; el.dispatchEvent(new Event('change')); el.dispatchEvent(new Event('blur')); } };
+  set('schName',f.onbFullName); set('schDob',f.onbDob); set('schGender',f.onbGender); set('schMobile',f.onbMobile);
+  set('schCategory',f.onbSocial); set('schIncome',f.onbIncome);
+  if(help) help.textContent='Filled from '+f.onbFullName+"'s onboarding record.";
+}
 function schInit(){
+  var dl=document.getElementById('schStudents');
+  if(dl && !dl.dataset.filled){ dl.innerHTML=Object.keys(schStudentRecords()).map(function(e){ return '<option value="'+e+'">'; }).join(''); dl.dataset.filled='1'; }
   // Reuse the gender master populated for onboarding (same DocType in production).
   const sel=document.getElementById('schGender');
   if(sel && !sel.dataset.populated && typeof GENDER_MASTER!=='undefined'){
@@ -7035,6 +7070,9 @@ const GENDER_MASTER = [
   {code:'PNS', en:'Prefer not to say'}
 ];
 function onbInit(){
+  // Fill the required "Assign Fellow" list on every visit (full org list, or the camp's Fellows on a camp link).
+  // Before this, the list was only filled via a camp link, so a regular onboarding could never be submitted.
+  if(typeof applyCampContext==='function') applyCampContext();
   // Populate gender dropdown from master (matches future Frappe Link → Gender DocType).
   const sel=document.getElementById('onbGender');
   if(sel && !sel.dataset.populated){
