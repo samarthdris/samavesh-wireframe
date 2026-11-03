@@ -1841,7 +1841,7 @@ img{max-width:100%}
           <div class="card stat"><div class="num" style="color:var(--green)">5</div><div class="cap">Accepted</div></div>
         </div>
 
-        <!-- === Must Have / Mandatory (4 docs) === -->
+        <!-- === Must Have / Mandatory (5 docs) === -->
         <div class="doc-group-banner">Must Have <span class="dgb-pill must">Mandatory</span></div>
 
         <!-- Aadhaar Card — Accepted (flat row) -->
@@ -1908,7 +1908,42 @@ img{max-width:100%}
           <div class="doc-notes-host" data-doc="12th School Leaving Certificate"></div>
         </div>
 
-        <!-- === Good to Have / Scholarship-specific (5 docs) === -->
+        <!-- Domicile — Under Review, expandable -->
+        <div class="arr-card" id="arr2" style="margin-bottom:10px">
+          <div class="arr-head" onclick="toggleArr('arr2')">
+            <div class="di" style="background:var(--blue-50);color:var(--blue)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></svg></div>
+            <div class="dn"><b>Domicile Certificate</b><small>Uploaded by your Fellow — being verified · tap to see status</small></div>
+            <span class="pill blue"><span class="pdot"></span>Under Review</span>
+            <svg class="chev" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+          <div class="docflow">
+            <div class="df done"><div class="d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div class="t">Pending</div></div>
+            <div class="df done"><div class="d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div class="t">Uploaded</div></div>
+            <div class="df cur"><div class="d"></div><div class="t">Under&nbsp;Review</div></div>
+            <div class="df"><div class="d"></div><div class="t">Accepted</div></div>
+          </div>
+          <div class="arr-body">
+            <div class="proc">
+              <div class="pi"><div class="k">Verification Status</div><div class="v" style="color:var(--blue)">Under Review</div></div>
+              <div class="pi"><div class="k">Document Type</div><div class="v">Domicile</div></div>
+              <div class="pi"><div class="k">Uploaded By</div><div class="v">Fellow Rahul</div></div>
+              <div class="pi"><div class="k">Upload Date</div><div class="v">2 Jun 2026</div></div>
+            </div>
+            <div class="tl">
+              <div class="tl-item done"><div class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div class="t">Pending</div><div class="d">Added to checklist · 22 May</div></div>
+              <div class="tl-item done"><div class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div class="t">Uploaded</div><div class="d">By Fellow Rahul · 2 Jun · Re-upload Version 1</div></div>
+              <div class="tl-item active"><div class="knob"></div><div class="t">Under Review</div><div class="d">A Program Admin is verifying this document · since 2 Jun</div></div>
+              <div class="tl-item future"><div class="t">Accepted</div><div class="d">—</div></div>
+            </div>
+            <div class="fellow-help">
+              <div class="fa">R</div>
+              <div><b>Submitted for verification.</b> You'll be notified the moment it's Accepted.</div>
+            </div>
+            <div class="doc-notes-host" data-doc="Domicile Certificate"></div>
+          </div>
+        </div>
+
+        <!-- === Good to Have / Scholarship-specific (4 docs) === -->
         <div class="doc-group-banner" style="margin-top:18px">Good to Have <span class="dgb-pill good">Scholarship-specific</span></div>
 
         <!-- Caste Certificate — Accepted (flat row) + sub-doc capability (locked until "Don't have") -->
@@ -1953,41 +1988,6 @@ img{max-width:100%}
               <div><b>Fellow Rahul is re-doing this for you.</b> You'll get an SMS as the status changes.</div>
             </div>
             <div class="doc-notes-host" data-doc="Non-Creamy Layer Certificate"></div>
-          </div>
-        </div>
-
-        <!-- Domicile — Under Review, expandable -->
-        <div class="arr-card" id="arr2" style="margin-bottom:10px">
-          <div class="arr-head" onclick="toggleArr('arr2')">
-            <div class="di" style="background:var(--blue-50);color:var(--blue)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></svg></div>
-            <div class="dn"><b>Domicile Certificate</b><small>Uploaded by your Fellow — being verified · tap to see status</small></div>
-            <span class="pill blue"><span class="pdot"></span>Under Review</span>
-            <svg class="chev" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-          <div class="docflow">
-            <div class="df done"><div class="d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div class="t">Pending</div></div>
-            <div class="df done"><div class="d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div class="t">Uploaded</div></div>
-            <div class="df cur"><div class="d"></div><div class="t">Under&nbsp;Review</div></div>
-            <div class="df"><div class="d"></div><div class="t">Accepted</div></div>
-          </div>
-          <div class="arr-body">
-            <div class="proc">
-              <div class="pi"><div class="k">Verification Status</div><div class="v" style="color:var(--blue)">Under Review</div></div>
-              <div class="pi"><div class="k">Document Type</div><div class="v">Domicile</div></div>
-              <div class="pi"><div class="k">Uploaded By</div><div class="v">Fellow Rahul</div></div>
-              <div class="pi"><div class="k">Upload Date</div><div class="v">2 Jun 2026</div></div>
-            </div>
-            <div class="tl">
-              <div class="tl-item done"><div class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div class="t">Pending</div><div class="d">Added to checklist · 22 May</div></div>
-              <div class="tl-item done"><div class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div class="t">Uploaded</div><div class="d">By Fellow Rahul · 2 Jun · Re-upload Version 1</div></div>
-              <div class="tl-item active"><div class="knob"></div><div class="t">Under Review</div><div class="d">A Program Admin is verifying this document · since 2 Jun</div></div>
-              <div class="tl-item future"><div class="t">Accepted</div><div class="d">—</div></div>
-            </div>
-            <div class="fellow-help">
-              <div class="fa">R</div>
-              <div><b>Submitted for verification.</b> You'll be notified the moment it's Accepted.</div>
-            </div>
-            <div class="doc-notes-host" data-doc="Domicile Certificate"></div>
           </div>
         </div>
 
@@ -2108,7 +2108,7 @@ img{max-width:100%}
             <div class="field"><div class="k">Gender</div><div class="v">Female</div></div>
             <div class="field"><div class="k">Category</div><div class="v">SC</div></div>
             <div class="field"><div class="k">Course</div><div class="v">B.Com · Year 2</div></div>
-            <div class="field"><div class="k">Institution</div><div class="v">Fergusson College, Pune</div></div>
+            <div class="field"><div class="k">Institution</div><div class="v">Brihan Maharashtra College of Commerce (BMCC)</div></div>
             <div class="field"><div class="k">State / District</div><div class="v">Maharashtra · Pune</div></div>
             <div class="field"><div class="k">Annual Family Income</div><div class="v">₹1,80,000</div></div><div class="field"><div class="k">Migrant Family</div><div class="v">Non-migrant</div></div>
             <div class="field"><div class="k">Mobile</div><div class="v">+91 98xxx xxx21</div></div>
@@ -2650,6 +2650,9 @@ img{max-width:100%}
                   <div class="qhelp">Validated as Indian 10-digit mobile (starts with 6/7/8/9). Used for SMS reminders only — login is by email.</div>
                 </div>
                 <div class="q"><div class="qen">Date of Form Submission <span class="req">*</span></div><input type="date" id="onbFormDate" value="2026-06-09" /><div class="qhelp">Auto-filled to today — override only for back-dated entries.</div></div>
+                <div class="q"><div class="qen">Aadhaar Number <span class="req">*</span></div><input type="text" id="onbAadhaar" inputmode="numeric" maxlength="12" placeholder="12-digit Aadhaar number" /><div class="qhelp">Masked everywhere else (xxxx xxxx 1234); each reveal is logged (ONB-08).</div></div>
+                <div class="q"><div class="qen">Guardian Name <span class="req">*</span></div><input type="text" id="onbGuardian" placeholder="Parent / guardian full name" /></div>
+                <div class="q"><div class="qen">Guardian Relationship <span class="req">*</span></div><select id="onbGuardianRel"><option value="">Select</option><option>Father</option><option>Mother</option><option>Guardian</option></select><div class="qhelp">The guardian gives consent when the student is under 18 (BR-03).</div></div>
               </div>
             </section>
 
@@ -2678,7 +2681,7 @@ img{max-width:100%}
               
               <div class="dt-grid">
                 <div class="q"><div class="qen">College Name <span class="req">*</span></div>
-                  <select id="onbCollege"><option value="">Search &amp; select college…</option><option>Fergusson College, Pune</option><option>Sir Parshurambhau (S.P.) College, Pune</option><option>Modern College, Pune</option><option>Brihan Maharashtra College of Commerce (BMCC)</option><option>Abasaheb Garware College</option><option>Nowrosjee Wadia College</option><option>MIT World Peace University</option><option>College of Engineering Pune (COEP)</option><option>Symbiosis College of Arts &amp; Commerce</option><option>D. Y. Patil College</option><option>PCCOE, Pimpri</option><option>Ness Wadia College of Commerce</option><option>Other</option></select>
+                  <select id="onbCollege"></select>
                   <div class="qhelp">Searchable dropdown — full college list maintained by Admin in production.</div></div>
                 <div class="q"><div class="qen">How did you hear about SAMAVESH? <span class="req">*</span></div>
                   <select id="onbHeard">
@@ -2740,6 +2743,10 @@ img{max-width:100%}
                 </tbody>
 
                 <tbody class="doc-group">
+                  <tr><td class="doc-name">Domicile Certificate</td>
+                    <td class="doc-stat"><select><option value="">Select…</option><option value="have">Have it</option><option value="dont">Don't have</option></select></td>
+                    <td class="doc-att"><button type="button" class="attach-btn" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.4 11 12 20.4a5 5 0 1 1-7-7L14 4.5a3.5 3.5 0 1 1 5 5l-9 9a2 2 0 0 1-3-3l8-8"/></svg>Attach</button></td>
+                  </tr>
                   <tr class="doc-group-h"><td colspan="3">Good to Have <span class="doc-pill good">Scholarship-specific</span></td></tr>
                   <tr><td class="doc-name">Caste Certificate</td>
                     <td class="doc-stat"><select><option value="">Select…</option><option value="have">Have it</option><option value="dont">Don't have</option><option value="na">N/A</option></select></td>
@@ -2747,10 +2754,6 @@ img{max-width:100%}
                   </tr>
                   <tr><td class="doc-name">Non-Creamy Layer Certificate</td>
                     <td class="doc-stat"><select><option value="">Select…</option><option value="have">Have it</option><option value="dont">Don't have</option><option value="na">N/A</option></select></td>
-                    <td class="doc-att"><button type="button" class="attach-btn" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.4 11 12 20.4a5 5 0 1 1-7-7L14 4.5a3.5 3.5 0 1 1 5 5l-9 9a2 2 0 0 1-3-3l8-8"/></svg>Attach</button></td>
-                  </tr>
-                  <tr><td class="doc-name">Domicile Certificate</td>
-                    <td class="doc-stat"><select><option value="">Select…</option><option value="have">Have it</option><option value="dont">Don't have</option></select></td>
                     <td class="doc-att"><button type="button" class="attach-btn" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.4 11 12 20.4a5 5 0 1 1-7-7L14 4.5a3.5 3.5 0 1 1 5 5l-9 9a2 2 0 0 1-3-3l8-8"/></svg>Attach</button></td>
                   </tr>
                   <tr><td class="doc-name">Ration Card</td>
@@ -2779,6 +2782,7 @@ img{max-width:100%}
                     <option>SC</option><option>ST</option><option>OBC</option><option>VJNT</option><option>SEBC</option><option>SBC</option><option>EWS</option><option>General</option><option>Other</option>
                   </select>
                 </div>
+                <div class="q"><div class="qen">Religion</div><select id="onbReligion"><option value="">Select</option><option>Prefer not to answer</option><option>Hindu</option><option>Muslim</option><option>Christian</option><option>Sikh</option><option>Buddhist</option><option>Jain</option><option>Other</option></select></div>
                 <div class="q"><div class="qen">Migrant Family?</div>
                   <select id="onbMigrant">
                     <option value="">Select</option>
@@ -2896,7 +2900,7 @@ img{max-width:100%}
             <div class="pa">A</div>
             <div style="flex:1">
               <h3 style="font-size:23px">Aarti Ramesh Pawar</h3>
-              <div style="color:var(--ink-soft);font-size:14px">SMV-2026-01182 · B.Com Year 2 · Fergusson College, Pune</div>
+              <div style="color:var(--ink-soft);font-size:14px">SMV-2026-01182 · B.Com Year 2 · Brihan Maharashtra College of Commerce (BMCC)</div>
               <div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><span class="pill blue"><span class="pdot"></span>Submitted</span></div>
             </div>
           </div>
@@ -3091,6 +3095,13 @@ img{max-width:100%}
             </div>
             <div style="margin:0 0 10px 58px"><button class="btn btn-ghost btn-sm doc-note-add" type="button" data-doc="12th School Leaving Certificate" onclick="renderAddDocNote(this)">Add note</button><div class="doc-notes-host" data-doc="12th School Leaving Certificate"></div></div>
 
+            <div class="doc-row">
+              <div class="di" style="background:var(--blue-50);color:var(--blue)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></svg></div>
+              <div class="dn"><b>Domicile Certificate</b><small>Uploaded 2 Jun · Re-upload Version 1</small></div>
+              <span class="pill blue" style="margin-right:8px"><span class="pdot"></span>Under Review</span>
+              <button class="btn btn-ghost btn-sm" onclick="downloadDoc('Domicile Certificate')"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:5px"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg>Download</button>
+            </div>
+            <div style="margin:0 0 10px 58px"><button class="btn btn-ghost btn-sm doc-note-add" type="button" data-doc="Domicile Certificate" onclick="renderAddDocNote(this)">Add note</button><div class="doc-notes-host" data-doc="Domicile Certificate"></div></div>
             <div class="doc-group-banner">Good to Have <span class="dgb-pill good">Scholarship-specific</span></div>
             <div class="doc-row">
               <div class="di" style="background:var(--green-50);color:var(--green)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></svg></div>
@@ -3106,13 +3117,6 @@ img{max-width:100%}
               <button class="btn btn-gold btn-sm" onclick="fileAct(this,'Uploaded')">Re-upload</button>
             </div>
             <div style="margin:0 0 10px 58px"><button class="btn btn-ghost btn-sm doc-note-add" type="button" data-doc="Non-Creamy Layer Certificate" onclick="renderAddDocNote(this)">Add note</button><div class="doc-notes-host" data-doc="Non-Creamy Layer Certificate"></div></div>
-            <div class="doc-row">
-              <div class="di" style="background:var(--blue-50);color:var(--blue)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></svg></div>
-              <div class="dn"><b>Domicile Certificate</b><small>Uploaded 2 Jun · Re-upload Version 1</small></div>
-              <span class="pill blue" style="margin-right:8px"><span class="pdot"></span>Under Review</span>
-              <button class="btn btn-ghost btn-sm" onclick="downloadDoc('Domicile Certificate')"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:5px"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg>Download</button>
-            </div>
-            <div style="margin:0 0 10px 58px"><button class="btn btn-ghost btn-sm doc-note-add" type="button" data-doc="Domicile Certificate" onclick="renderAddDocNote(this)">Add note</button><div class="doc-notes-host" data-doc="Domicile Certificate"></div></div>
             <div class="doc-row">
               <div class="di" style="background:var(--amber-50);color:var(--amber)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></svg></div>
               <div class="dn"><b>Ration Card</b><small>Procurement in progress — Documentation Application created 4 Jun</small></div>
@@ -3201,17 +3205,9 @@ img{max-width:100%}
                 <span class="app-acc-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg></span>
               </div>
               <div class="app-acc-body">
-                <p style="font-size:13px;color:var(--ink-soft);margin:0 0 14px">All documents Accepted. Submit on the government portal, then record the details below (the submitted PDF is mandatory proof).</p>
-                <div class="form-grid">
-                  <div class="fg"><label>Application Portal<span class="req">*</span></label><input value="National Scholarship Portal" /></div>
-                  <div class="fg"><label>Application Submission Date<span class="req">*</span></label><input type="date" /><span class="hint">Cannot be future-dated</span></div>
-                  <div class="fg"><label>Government Application ID<span class="req">*</span></label><input placeholder="As shown on the portal" /></div>
-                  <div class="fg"><label>Sanctioned / Expected Amount (₹)<span class="req">*</span></label><input type="number" value="25000" /></div>
-                  <div class="fg"><label>Bank Account (for disbursal)<span class="req">*</span></label><input placeholder="As per student profile" /></div>
-                  <div class="fg"><label>IFSC<span class="req">*</span></label><input placeholder="e.g. SBIN0001234" /></div>
-                  <div class="fg full"><label>Submitted Application PDF<span class="req">*</span></label><div class="app-pdf-host" data-app="ms" data-can-replace></div><span class="hint">One PDF per application — the same file shown on Applications and to the student.</span></div>
-                </div>
-                <button class="btn btn-primary btn-sm" style="margin-top:14px" onclick="this.outerHTML='<span class=&quot;pill green&quot;><span class=&quot;pdot&quot;></span>Submitted &amp; recorded</span>'">Submit &amp; Record Application</button>
+                <p style="font-size:13px;color:var(--ink-soft);margin:0 0 14px">All documents Accepted. Submit on the government portal, then record it on the <b>Scholarship Data Entry form</b>, the single record for this application. Its Application ID, submission date, status and PDF then show here.</p>
+                <div class="app-pdf-host" data-app="ms" data-can-replace></div>
+                <button class="btn btn-primary btn-sm" style="margin-top:14px" onclick="openSchFor('ms')">Record on the Scholarship Data Entry form</button>
               </div>
             </div>
 
@@ -3380,7 +3376,7 @@ img{max-width:100%}
                 <div class="q full"><div class="qen">Fellow Email <span class="req">*</span></div><input type="email" value="rahul.more@samavesh.org" disabled style="opacity:.7" /><div class="qhelp">Auto-filled from your authenticated session.</div></div>
                 <div class="q"><div class="qen">Fellow Name <span class="req">*</span></div>
                   <select><option>Rahul More (you)</option><option>Akshay K</option><option>Anil K</option><option>Sandip K</option><option>Dhanashree O</option><option>Vaibhav D</option><option>Vishwas W</option><option>Adesh G</option><option>Tanuja K</option><option>Shalmon S</option><option>Balaji C</option><option>Vijay J</option><option>Sandhya S</option><option>Sanchita</option><option>Vaibhavi</option><option>Anosh W</option><option>Rushikesh K</option><option>Kiran D</option><option>Samiksha T</option><option>Shivani T</option></select></div>
-                <div class="q"><div class="qen">Application Submission Date <span class="req">*</span></div><input type="date" value="2026-06-09" /><div class="qhelp">Auto-filled to today; override for back-dated entries.</div></div>
+                <div class="q"><div class="qen">Application Submission Date <span class="req">*</span></div><input type="date" id="schSubDate" value="2026-06-09" /><div class="qhelp">Auto-filled to today; override for back-dated entries.</div></div>
               </div>
             </section>
 
@@ -3388,6 +3384,7 @@ img{max-width:100%}
             <section class="dt-section" id="sch-student">
               <h3 class="dt-sec-title"><span class="anum">2</span>Student Profile</h3>
               <div class="dt-sec-lead">Filled from the student's onboarding record: enter the student's email.</div>
+              <div class="readonly-note" id="schTargetNote" style="display:none;margin-bottom:12px"></div>
               <div class="dt-grid">
                 <div class="q full"><div class="qen">Student (onboarding email) <span class="req">*</span></div><input type="email" id="schStudentEmail" list="schStudents" placeholder="Student's email, e.g. aarti.pawar@gmail.com" onchange="schLookup(this.value)" /><datalist id="schStudents"></datalist><div class="qhelp" id="schLookupHelp">The details below fill from the onboarding record.</div></div>
                 <div class="q full"><div class="qen">Student's Name <span class="req">*</span></div><input type="text" id="schName" placeholder="Full name as per Govt ID" /></div>
@@ -3498,7 +3495,7 @@ img{max-width:100%}
                     <option>Other</option>
                   </select>
                 </div>
-                <div class="q full"><div class="qen">College Name <span class="req">*</span></div><select><option value="">Search &amp; select college…</option><option>Fergusson College, Pune</option><option>S.P. College, Pune</option><option>Modern College, Pune</option><option>BMCC, Pune</option><option>MIT World Peace University</option><option>COEP Technological University</option><option>D. Y. Patil College</option><option>PCCOE, Pimpri</option><option>Other</option></select><div class="qhelp">Searchable — full list maintained centrally in production.</div></div>
+                <div class="q full"><div class="qen">College Name <span class="req">*</span></div><select id="schCollege"></select><div class="qhelp">Searchable — full list maintained centrally in production.</div></div>
               </div>
             </section>
 
@@ -3527,53 +3524,13 @@ img{max-width:100%}
                 <div class="q"><div class="qen">Applicant User Name <span class="req">*</span></div><input type="text" placeholder="Username on the portal" style="font-family:'Courier New',monospace" /></div>
                 <div class="q"><div class="qen">Applicant Password <span class="req">*</span></div><div class="cred"><input type="password" placeholder="Portal password" /><span class="eye" onclick="eye(this)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></span></div></div>
                 <div class="q full"><div class="qen">Scheme Name <span class="req">*</span></div>
-                  <select onchange="var o=this.parentNode.querySelector('.sch-other'); o.style.display=this.value==='Other'?'':'none'; if(this.value==='Other') o.focus();">
-                    <option value="">Select scheme…</option>
-                    <optgroup label="SC / ST Schemes">
-                      <option>Government of India Post-Matric Scholarship</option>
-                      <option>Post Matric Scholarship Scheme (Government Of India)</option>
-                      <option>Tuition Fee and Exam Fee For Tribal Students (Freeship)</option>
-                    </optgroup>
-                    <optgroup label="OBC Schemes">
-                      <option>Post Matric Scholarship to OBC Students</option>
-                      <option>Tuition Fees and Examination Fees to OBC Students</option>
-                      <option>Post Matric Scholarship to OBC Girls (Professional Courses)</option>
-                      <option>Tuition &amp; Exam Fees to OBC Girls (Professional Courses)</option>
-                    </optgroup>
-                    <optgroup label="VJNT / SBC Schemes">
-                      <option>Post Matric Scholarship to VJNT Students</option>
-                      <option>Tuition Fees and Examination Fees to VJNT Students</option>
-                      <option>Post Matric Scholarship to SBC Students</option>
-                    </optgroup>
-                    <optgroup label="Merit / EBC / Freeship">
-                      <option>Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavrutti Scheme</option>
-                      <option>Rajarshi Chhatrapati Shahu Maharaj Merit Scholarship</option>
-                      <option>Shahu Maharaj Merit Scholarship (11th &amp; 12th, VJNT &amp; SBC)</option>
-                      <option>Rajarshi Chhatrapati Shahu Maharaj Fee Reimbursement Scheme</option>
-                      <option>Shikshan Shulkh Shishyavrutti Yojna (EBC)</option>
-                      <option>Post-Matric Tuition Fee and Examination Fee (Freeship)</option>
-                    </optgroup>
-                    <optgroup label="Minority / Disability">
-                      <option>State Minority Scholarship Part II (DHE)</option>
-                      <option>Post-Matric Scholarship for persons with disability</option>
-                    </optgroup>
-                    <optgroup label="Hostel / Maintenance">
-                      <option>Dr Babasaheb Ambedkar Swadhar Yojana</option>
-                      <option>Dr Panjabrao Deshmukh Vastigruh Nirvah Bhatta Yojna (DTE)</option>
-                      <option>Dr Punjabrao Deshmukh Vasatigruh Nirvah Bhatta Yojna (DHE)</option>
-                    </optgroup>
-                    <optgroup label="Other">
-                      <option>PCMC Scholarship</option>
-                      <option>BOCW (Building &amp; Other Construction Workers)</option>
-                      <option>Other</option>
-                    </optgroup>
-                  </select>
+                  <select onchange="var o=this.parentNode.querySelector('.sch-other'); o.style.display=this.value==='Other'?'':'none'; if(this.value==='Other') o.focus();" id="schScheme"></select>
                   <input class="sch-other" type="text" placeholder="Scheme name exactly as on the government portal" style="display:none;margin-top:8px" />
-                  <div class="qhelp">23 schemes grouped by category, plus <b>Other</b>. Use Other only for a scheme not in the master; the Program Admin reviews it and adds it to the catalogue.</div>
+                  <div class="qhelp">23 schemes from the client eligibility sheet, grouped by department, plus <b>Other</b>. Use Other only for a scheme not in the master; the Program Admin reviews it and adds it to the catalogue.</div>
                 </div>
-                <div class="q"><div class="qen">Application ID <span class="req">*</span></div><input type="text" placeholder="Application ID from portal" style="font-family:'Courier New',monospace" /></div>
+                <div class="q"><div class="qen">Application ID <span class="req">*</span></div><input type="text" id="schAppId" placeholder="Application ID from portal" style="font-family:'Courier New',monospace" /></div>
                 <div class="q"><div class="qen">Application Status <span class="req">*</span></div>
-                  <select onchange="onAppStatus(this)"><option value="">Select status</option><option>Under Scrutiny</option><option>Application Approved · funds awaited</option><option>Benefits Received</option><option>Rejected</option><option>Re-apply</option></select></div>
+                  <select id="schAppStatus" onchange="onAppStatus(this)"><option value="">Select status</option><option>Under Scrutiny</option><option>Application Approved · funds awaited</option><option>Benefits Received</option><option>Rejected</option><option>Re-apply</option></select></div>
                 <div class="q full"><div class="qen">Total Benefits <span class="req">*</span></div><div class="qhelp" style="margin-top:0">Split across the student and the institute.</div>
                   <div class="form-grid" style="margin-top:10px"><div class="fg"><label>For Student (₹)</label><input type="number" placeholder="0" /></div><div class="fg"><label>For Institute (₹)</label><input type="number" placeholder="0" /></div></div></div>
                 <div class="q full" id="uploadPdfQ"><div class="qen">Upload Submitted PDF <span class="req">*</span></div><input type="file" accept="application/pdf" onchange="saveSchFormPdf(this)" /><div class="qhelp">Final submitted application PDF (proof). PDF, max 10 MB. This becomes the one file downloadable from Applications and the student's Scholarships screen.</div></div>
@@ -3756,7 +3713,7 @@ img{max-width:100%}
           <select onchange="misFilter(this,'Scholarship')"><option>All Scholarships</option><option>GoI Post-Matric</option><option>OBC Post-Matric</option></select>
           <select onchange="misFilter(this,'Category')"><option>All Categories</option><option>SC</option><option>ST</option><option>OBC</option><option>VJNT</option><option>Minority</option></select>
           <select onchange="misFilter(this,'Student')"><option>All Students</option><option>Aarti Ramesh Pawar</option><option>Kavya Deshmukh</option><option>Sneha Patil</option></select>
-          <select onchange="misFilter(this,'College')"><option>All Colleges</option><option>Fergusson College, Pune</option><option>SP College, Pune</option><option>KTHM College, Nashik</option></select>
+          <select onchange="misFilter(this,'College')" id="misCollege"><option>All Colleges</option></select>
           <select onchange="misFilter(this,'Migrant')"><option>Migrant status: All</option><option>Migrant</option><option>Non-migrant</option></select>
           <span id="misFilterNote" style="font-size:12.5px;color:var(--teal-700);font-weight:600;align-self:center"></span>
           <span class="mis-chip" id="misChip" style="display:none"></span>
@@ -3926,26 +3883,7 @@ img{max-width:100%}
           <div style="display:flex;gap:10px;margin-top:16px"><button class="btn btn-primary btn-sm" onclick="alert('Scholarship added to the catalogue. Eligibility engine will include it on the next profile evaluation.');toggleCatForm()">Save Scholarship</button><button class="btn btn-ghost btn-sm" onclick="toggleCatForm()">Cancel</button></div>
         </div>
 
-        <div class="card" style="margin-bottom:12px"><div class="sch-card">
-          <div class="logo" style="background:linear-gradient(140deg,#0f857a,#0a3f3a)">PM</div>
-          <div class="body"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><h4>Government of India Post-Matric Scholarship</h4><button class="btn btn-ghost btn-sm" onclick="editScholarship('Government of India Post-Matric Scholarship')">Edit</button></div>
-          <div class="meta"><span>Category: SC</span><span>Income ≤ ₹2.5L</span><span><b class="amount">₹50,000</b>/yr</span><span>8 docs required</span></div></div>
-        </div></div>
-        <div class="card" style="margin-bottom:12px"><div class="sch-card">
-          <div class="logo" style="background:linear-gradient(140deg,#e8821e,#f6b24a);color:#3a2400">OB</div>
-          <div class="body"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><h4>Post Matric Scholarship to OBC Students</h4><button class="btn btn-ghost btn-sm" onclick="editScholarship('Post Matric Scholarship to OBC Students')">Edit</button></div>
-          <div class="meta"><span>Category: OBC</span><span>Income ≤ ₹2.5L</span><span><b class="amount">₹38,000</b>/yr</span><span>7 docs required</span></div></div>
-        </div></div>
-        <div class="card" style="margin-bottom:12px"><div class="sch-card">
-          <div class="logo" style="background:linear-gradient(140deg,#2f6fd6,#1c4ea8)">MS</div>
-          <div class="body"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><h4>State Minority Scholarship Part II (DHE)</h4><button class="btn btn-ghost btn-sm" onclick="editScholarship('State Minority Scholarship Part II (DHE)')">Edit</button></div>
-          <div class="meta"><span>Category: Minority</span><span>Income ≤ ₹8L</span><span><b class="amount">₹25,000</b>/yr</span><span>6 docs required</span></div></div>
-        </div></div>
-        <div class="card"><div class="sch-card">
-          <div class="logo" style="background:linear-gradient(140deg,#7a5cd0,#5538a8)">AB</div>
-          <div class="body"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><h4>Dr Babasaheb Ambedkar Swadhar Yojana</h4><button class="btn btn-ghost btn-sm" onclick="editScholarship('Dr Babasaheb Ambedkar Swadhar Yojana')">Edit</button></div>
-          <div class="meta"><span>Category: SC</span><span>Hostel/Maintenance</span><span><b class="amount">₹38,000</b>/yr</span><span>6 docs required</span></div></div>
-        </div></div>
+        <div id="catList"></div>
       </section>
 
       <!-- ===== ALL STUDENTS ===== -->
@@ -3980,7 +3918,7 @@ img{max-width:100%}
             <div class="pa" id="asAvatar">A</div>
             <div style="flex:1">
               <h3 style="font-size:23px" id="asName">Aarti Ramesh Pawar</h3>
-              <div style="color:var(--ink-soft);font-size:14px" id="asSub">SMV-2026-01182 · B.Com Year 2 · Fergusson College, Pune</div>
+              <div style="color:var(--ink-soft);font-size:14px" id="asSub">SMV-2026-01182 · B.Com Year 2 · Brihan Maharashtra College of Commerce (BMCC)</div>
               <div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap" id="asStagePill"><span class="pill blue"><span class="pdot"></span>Submitted</span></div>
             </div>
           </div>
@@ -4132,6 +4070,12 @@ img{max-width:100%}
             </div>
             <div class="doc-notes-host" data-doc="12th School Leaving Certificate" style="margin-left:58px"></div>
 
+            <div class="vrow" data-vstatus="all">
+              <div class="vi"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></svg></div>
+              <div class="vb"><b>Domicile Certificate</b><small>Uploaded by Fellow · 2 Jun · Re-upload Version 1 · awaiting your review</small></div>
+              <div class="vacts"><button class="btn btn-ghost btn-sm" onclick="openDocPreview('Domicile Certificate','Uploaded by Fellow · 2 Jun · Re-upload Version 1 · awaiting your review')">View file</button><button class="btn btn-danger btn-sm" onclick="vAct(this,'reject')">Reject</button><button class="btn btn-accept btn-sm" onclick="vAct(this,'accept')">Accept</button></div>
+            </div>
+            <div class="doc-notes-host" data-doc="Domicile Certificate" style="margin-left:58px"></div>
             <div class="doc-group-banner" style="margin:18px 0 8px">Good to Have <span class="dgb-pill good">Scholarship-specific</span></div>
             <div class="vrow" data-vstatus="done">
               <div class="vi" style="background:var(--green-50);color:var(--green)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></svg></div>
@@ -4139,12 +4083,6 @@ img{max-width:100%}
               <div class="vacts"><span class="pill green"><span class="pdot"></span>Accepted</span></div>
             </div>
             <div class="doc-notes-host" data-doc="Caste Certificate" style="margin-left:58px"></div>
-            <div class="vrow" data-vstatus="all">
-              <div class="vi"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></svg></div>
-              <div class="vb"><b>Domicile Certificate</b><small>Uploaded by Fellow · 2 Jun · Re-upload Version 1 · awaiting your review</small></div>
-              <div class="vacts"><button class="btn btn-ghost btn-sm" onclick="openDocPreview('Domicile Certificate','Uploaded by Fellow · 2 Jun · Re-upload Version 1 · awaiting your review')">View file</button><button class="btn btn-danger btn-sm" onclick="vAct(this,'reject')">Reject</button><button class="btn btn-accept btn-sm" onclick="vAct(this,'accept')">Accept</button></div>
-            </div>
-            <div class="doc-notes-host" data-doc="Domicile Certificate" style="margin-left:58px"></div>
             <div class="vrow" data-vstatus="done">
               <div class="vi" style="background:var(--red-50);color:var(--red)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></div>
               <div class="vb"><b>Non-Creamy Layer Certificate</b><small style="color:var(--red)">Rejected: "Not clearly legible" — awaiting Fellow re-upload</small></div>
@@ -4533,6 +4471,7 @@ function saveOnbDraft(){
 function submitStudentOnboarding(){ submitOnboarding(); }   // Submit for review → gate switches to "with your Fellow for review"
 // Clone the ONE onboarding form (#onbForm) with an id/name prefix so multiple copies coexist.
 function cloneOnbForm(prefix){
+  if(typeof initMasters==='function') initMasters();   // college list must exist before the copy is taken
   var src=document.getElementById('onbForm'); if(!src) return null;
   var clone=src.cloneNode(true); clone.id=prefix+'onbForm';
   clone.querySelectorAll('[id]').forEach(function(el){ el.id=prefix+el.id; });
@@ -4586,16 +4525,16 @@ function lockOnbClone(clone){
 var MY_ONBOARDING = {
   name:'Aarti Ramesh Pawar', submitted:'12 Apr 2026', approvedBy:'Rahul More', approvedDate:'14 Apr 2026',
   fields:{ onbEmail:'aarti.pawar@gmail.com', onbFullName:'Aarti Ramesh Pawar', onbDob:'2005-08-14', onbGender:'F',
-           onbMobile:'9800000021', onbFormDate:'2026-04-12', onbState:'Maharashtra',
+           onbMobile:'9800000021', onbFormDate:'2026-04-12', onbAadhaar:'452891634821', onbGuardian:'Ramesh Pawar', onbGuardianRel:'Father', onbState:'Maharashtra',
            onbPermAddr:'23 Shanti Nagar, Kothrud, Pune 411038', onbDistrict:'Pune',
            onbCurrAddr:'23 Shanti Nagar, Kothrud, Pune 411038', onbCurrDistrict:'Pune',
-           onbCollege:'Fergusson College, Pune', onbHeard:'College',
+           onbCollege:'Brihan Maharashtra College of Commerce (BMCC)', onbHeard:'College',
            onbGrade:'Graduation - 2nd Year', onbStream:'Commerce & Management', onbMarks:'78%',
            onbPrevGrade:'Graduation - 1st Year', onbPrevMarks:'74%',
-           onbSocial:'SC', onbIncome:'₹1 – 2 lakh', onbMigrant:'Non-migrant', onbParentDis:'No', onbOccupation:'Daily Wages', onbDrug:'No',
+           onbSocial:'SC', onbReligion:'Buddhist', onbIncome:'₹1 – 2 lakh', onbMigrant:'Non-migrant', onbParentDis:'No', onbOccupation:'Daily Wages', onbDrug:'No',
            onbGoals:'Complete my B.Com and qualify for a government scholarship.', onbCareer:'Become a chartered accountant.',
            onbShare:'Mother is the sole earner; fee support needed this year.', onbConsent:'Aarti Ramesh Pawar' },
-  docs:['have','have','have','have','have','dont','have','dont','na'],
+  docs:['have','have','have','have','have','have','dont','dont','na'],
   checks:{ onb_support:[0], onb_vuln:[1,2], onb_sp:[1], onb_house:[0], onb_net:[0], onb_comp:[0] }
 };
 // Build the student's read-only view of their submission; re-set the stamp/back-link/request box on every visit.
@@ -4651,13 +4590,13 @@ var PENDING_ONBOARDINGS = {
              onbMobile:'9812345678', onbFormDate:'2026-07-03', onbState:'Maharashtra',
              onbPermAddr:'12 Shivaji Nagar, Near Zilla Parishad, Pune 411005', onbDistrict:'Pune',
              onbCurrAddr:'12 Shivaji Nagar, Near Zilla Parishad, Pune 411005', onbCurrDistrict:'Pune',
-             onbCollege:'Fergusson College, Pune', onbHeard:'College',
+             onbCollege:'Brihan Maharashtra College of Commerce (BMCC)', onbHeard:'College',
              onbGrade:'Graduation - 1st Year', onbStream:'Arts / Humanities', onbMarks:'74%',
              onbPrevGrade:'12th', onbPrevMarks:'78%',
              onbSocial:'OBC', onbIncome:'₹1 – 2 lakh', onbMigrant:'Migrant', onbParentDis:'No', onbOccupation:'Daily Wages', onbDrug:'No',
              onbGoals:'Complete my B.A and secure a government scholarship.', onbCareer:'Become a school teacher.',
              onbShare:'Father is the sole earner; needs fee support this semester.', onbConsent:'Ravi Deshmukh' },
-    docs:['have','dont','have','have','dont','na','have','have','na'],
+    docs:['have','dont','have','have','have','dont','na','have','na'],
     checks:{ onb_support:[0], onb_vuln:[1,2], onb_sp:[1], onb_house:[0], onb_net:[1], onb_comp:[1] }
   },
   'onb-sneha': {
@@ -5235,11 +5174,12 @@ function initAppPdfAll(){
     host.innerHTML = renderAppPdf(host.getAttribute('data-app'), host.hasAttribute('data-can-replace'));
   });
 }
-// Called from the Scholarship Data Entry form's Upload field (demo always targets 'pm' — see design doc's stated simplification).
+// Called from the Scholarship Data Entry form's Upload field: targets the application being recorded (SCH_TARGET), else 'pm'.
 function saveSchFormPdf(input){
   if(!input.files || !input.files[0]) return;
-  APP_PDF.pm = {name:input.files[0].name, on:'today'};
-  refreshAppPdf('pm');
+  var key=SCH_TARGET||'pm';
+  APP_PDF[key] = {name:input.files[0].name, on:'today'};
+  refreshAppPdf(key);
 }
 // ---- Financial Tracking — installment-wise disbursement per application ----
 // 4 applications x 4 entries. s/i = Student/Institute level, 1/2 = First/Second Installment.
@@ -5503,19 +5443,19 @@ var CAMP_PROGRAMS = ['Scholarship','Documentation','Mentoring'];
 var CAMP_STATUSES = ['Draft','Scheduled','Active','Completed','Closed'];
 var CAMP_FELLOWS  = ['Rahul More','Sandip K','Dhanashree O','Vaibhav D'];
 var CAMPS = [
-  {id:'FER-12/08/26-001', name:'Fergusson College Scholarship Drive', program:'Scholarship',
+  {id:'BRI-12/08/26-001', name:'BMCC Scholarship Drive', program:'Scholarship',
    start:'2026-08-12', end:'2026-08-22', owner:'Meera Nair', status:'Active', target:120,
    description:'Post-Matric and OBC drive across UG streams.',
-   venueType:'College', institution:'Fergusson College, Pune', address:'FC Road, Shivajinagar',
+   venueType:'College', institution:'Brihan Maharashtra College of Commerce (BMCC)', address:'FC Road, Shivajinagar',
    city:'Pune', district:'Pune', state:'Maharashtra', venueContact:'Prof. S. Kulkarni', venuePhone:'98220 11234',
    hasPartner:true, partnerName:'Vidya Poshak Trust', partnerContact:'Anil Deshmukh', partnerPhone:'98230 55671',
    partnershipType:'Outreach partner', partnerNotes:'Provides volunteers and refreshments.',
    primaryFellow:'Rahul More', supportingFellows:['Dhanashree O'],
    registered:86, completed:71, draft:9, docSupport:4, today:12},
-  {id:'SPC-02/09/26-002', name:'S.P. College Documentation Camp', program:'Documentation',
+  {id:'SIR-02/09/26-002', name:'S.P. College Documentation Camp', program:'Documentation',
    start:'2026-09-02', end:'2026-09-05', owner:'Meera Nair', status:'Scheduled', target:60,
    description:'Caste validity and income certificate support.',
-   venueType:'College', institution:'Sir Parshurambhau (S.P.) College, Pune', address:'Tilak Road',
+   venueType:'College', institution:'Sir Parashurambhau College, Tilak Road', address:'Tilak Road',
    city:'Pune', district:'Pune', state:'Maharashtra', venueContact:'Dr. A. Joshi', venuePhone:'98221 33445',
    hasPartner:false, partnerName:'', partnerContact:'', partnerPhone:'', partnershipType:'', partnerNotes:'',
    primaryFellow:'Sandip K', supportingFellows:[],
@@ -5523,7 +5463,7 @@ var CAMPS = [
   {id:'MOD-14/07/26-003', name:'Modern College Onboarding Camp', program:'Scholarship',
    start:'2026-07-14', end:'2026-07-18', owner:'Meera Nair', status:'Completed', target:80,
    description:'Completed drive — follow-up closed.',
-   venueType:'College', institution:'Modern College, Pune', address:'Shivajinagar',
+   venueType:'College', institution:'Modern College of Arts Science & Commerce', address:'Shivajinagar',
    city:'Pune', district:'Pune', state:'Maharashtra', venueContact:'Prof. R. Pawar', venuePhone:'98225 77889',
    hasPartner:false, partnerName:'', partnerContact:'', partnerPhone:'', partnershipType:'', partnerNotes:'',
    primaryFellow:'Dhanashree O', supportingFellows:['Vaibhav D'],
@@ -5533,8 +5473,8 @@ var CAMP_SEQ = 3;
 // Student -> fellow/camp assignment. One student is deliberately left Not Assigned so that state is
 // visible on first load (the source document requires unassigned students to be identifiable).
 var STUDENT_ASSIGN = {
-  'Aarti Ramesh Pawar': {fellow:'Rahul More',   camp:'FER-12/08/26-001', status:'Assigned'},
-  'Kavya Deshmukh':     {fellow:'Rahul More',   camp:'FER-12/08/26-001', status:'Assigned'},
+  'Aarti Ramesh Pawar': {fellow:'Rahul More',   camp:'BRI-12/08/26-001', status:'Assigned'},
+  'Kavya Deshmukh':     {fellow:'Rahul More',   camp:'BRI-12/08/26-001', status:'Assigned'},
   'Sneha Patil':        {fellow:'Dhanashree O', camp:'MOD-14/07/26-003', status:'Reassigned'},
   'Suresh Jadhav':      {fellow:'',             camp:'',                status:'Not Assigned'}
 };
@@ -5572,7 +5512,7 @@ function campTimeline(c){
     {label:'Follow-up Closed',  on:si >= CAMP_STATUSES.indexOf('Closed')}
   ];
 }
-// Institution names in the demo data often already include the city ("Fergusson College, Pune"),
+// Institution names in the demo data often already include the city ("Nowrosjee Wadia College, Pune"),
 // so only append it when it isn't already there.
 function campVenueLabel(c){
   var inst = c.institution || '';
@@ -5700,12 +5640,11 @@ function fellowWorkload(f){
 function renderCampForm(){
   var host = document.getElementById('campForm');
   if(!host) return;
-  var colleges = ['Fergusson College, Pune','Sir Parshurambhau (S.P.) College, Pune','Modern College, Pune',
-    'Brihan Maharashtra College of Commerce (BMCC)','Abasaheb Garware College','Nowrosjee Wadia College'];
+  var colleges = COLLEGES.slice();
   host.innerHTML =
     '<div class="camp-sec"><h3>Basic information</h3><div class="csl">Duration is calculated for you — Sundays are excluded.</div>'+
       '<div class="form-grid">'+
-        '<div class="fg"><label>Camp name<span class="req">*</span></label><input id="cfName" placeholder="e.g. Fergusson College Scholarship Drive" /></div>'+
+        '<div class="fg"><label>Camp name<span class="req">*</span></label><input id="cfName" placeholder="e.g. BMCC Scholarship Drive" /></div>'+
         '<div class="fg"><label>Program<span class="req">*</span></label><select id="cfProgram">'+CAMP_PROGRAMS.map(function(p){return '<option>'+p+'</option>';}).join('')+'</select></div>'+
         '<div class="fg"><label>Start date<span class="req">*</span></label><input type="date" id="cfStart" onchange="campRecalcDuration()" /></div>'+
         '<div class="fg"><label>End date<span class="req">*</span></label><input type="date" id="cfEnd" onchange="campRecalcDuration()" /></div>'+
@@ -6776,8 +6715,41 @@ function saveDraft(btn){
 }
 
 // Admin: Edit scholarship from the catalogue. In production this opens the same form used by "+ Add Scholarship".
-function editScholarship(name){
-  alert('Edit "' + name + '" — opens the same scheme-editor form as "+ Add Scholarship", pre-filled with the current values. Changes are audit-logged. The eligibility engine re-evaluates all students on save.');
+// Client masters (docs/source): the 23 schemes of the eligibility-criteria xlsx and the 53 colleges of the
+// onboarding Google Form (Q13). Every catalogue card, scheme dropdown and college dropdown renders from these.
+var SCHEMES = [{"dept": "Tribal Development Department", "name": "Post Matric Scholarship Scheme (Government Of India)", "grades": "11th – PG", "cat": "ST", "income": "≤ ₹2.5L", "marks": ""}, {"dept": "Tribal Development Department", "name": "Tuition Fee & Exam Fee for Tribal Students (Freeship)", "grades": "11th – PG", "cat": "ST", "income": "≤ ₹8L", "marks": ""}, {"dept": "Social Justice and Special Assistance", "name": "Government of India Post-Matric Scholarship", "grades": "11th – PG", "cat": "SC", "income": "≤ ₹2.5L", "marks": ""}, {"dept": "Social Justice and Special Assistance", "name": "Rajarshri Chhatrapati Shahu Maharaj Merit Scholarship", "grades": "11th & 12th only", "cat": "SC", "income": "≤ ₹2.5L", "marks": "75%+"}, {"dept": "Social Justice and Special Assistance", "name": "Post-Matric Tuition Fee and Examination Fee (Freeship)", "grades": "11th – PG", "cat": "SC", "income": "₹2.5L – ₹8L", "marks": ""}, {"dept": "Social Justice and Special Assistance", "name": "Post-Matric Scholarship for persons with disability", "grades": "11th – PG", "cat": "SC", "income": "≤ ₹2.5L", "marks": ""}, {"dept": "Social Justice and Special Assistance", "name": "Bharatratna Dr. Babasaheb Ambedkar Swadhar Yojana", "grades": "11th – PG", "cat": "SC", "income": "≤ ₹2.5L", "marks": "50%+"}, {"dept": "OBC, SEBC, VJNT & SBC Welfare Department", "name": "Post Matric Scholarship to OBC Students", "grades": "11th – PG", "cat": "OBC", "income": "≤ ₹2.5L", "marks": ""}, {"dept": "OBC, SEBC, VJNT & SBC Welfare Department", "name": "Tuition Fees and Examination Fees to OBC Students", "grades": "11th – PG", "cat": "OBC", "income": "≤ ₹8L", "marks": ""}, {"dept": "OBC, SEBC, VJNT & SBC Welfare Department", "name": "Post Matric Scholarship to the Girls Belonging to Other Backward Classes taking admission in Professional Courses", "grades": "11th – PG", "cat": "OBC (girls)", "income": "≤ ₹2.5L", "marks": ""}, {"dept": "OBC, SEBC, VJNT & SBC Welfare Department", "name": "Payment of Tuition Fees and Examination Fees to OBC Girls Pursuing Professional Courses", "grades": "11th – PG", "cat": "OBC (girls)", "income": "≤ ₹8L", "marks": ""}, {"dept": "OBC, SEBC, VJNT & SBC Welfare Department", "name": "Post Matric Scholarship to VJNT Students", "grades": "11th – PG", "cat": "VJNT", "income": "≤ ₹2.5L", "marks": ""}, {"dept": "OBC, SEBC, VJNT & SBC Welfare Department", "name": "Rajarshi Chhatrapati Shahu Maharaj Merit Scholarship for students studying in 11th & 12th standard of VJNT & SBC category", "grades": "11th & 12th only", "cat": "VJNT", "income": "≤ ₹2.5L", "marks": "75%+"}, {"dept": "OBC, SEBC, VJNT & SBC Welfare Department", "name": "Tuition Fees and Examination Fees to VJNT Students", "grades": "11th – PG", "cat": "VJNT", "income": "≤ ₹8L", "marks": ""}, {"dept": "OBC, SEBC, VJNT & SBC Welfare Department", "name": "Post Matric Scholarship to SBC Students", "grades": "11th – PG", "cat": "SBC", "income": "≤ ₹2.5L", "marks": ""}, {"dept": "OBC, SEBC, VJNT & SBC Welfare Department", "name": "Tuition Fees and Examination Fees to SBC Students", "grades": "11th – PG", "cat": "SBC", "income": "≤ ₹8L", "marks": ""}, {"dept": "Directorate of Higher Education", "name": "Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavrutti Scheme", "grades": "Graduation – PG", "cat": "General, SEBC", "income": "≤ ₹8L", "marks": ""}, {"dept": "Directorate of Higher Education", "name": "Dr. Punjabrao Deshmukh Vasatigruh Nirvah Bhatta Yojna (DHE)", "grades": "Graduation – PG", "cat": "General, SEBC", "income": "≤ ₹8L", "marks": ""}, {"dept": "Directorate of Technical Education", "name": "Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavrutti Yojna (EBC)", "grades": "Graduation – PG", "cat": "General, SEBC", "income": "≤ ₹8L", "marks": ""}, {"dept": "Directorate of Technical Education", "name": "Dr Panjabrao Deshmukh Vastigruh Nirvah Bhatta Yojna (DTE)", "grades": "Graduation – PG", "cat": "General, SEBC", "income": "≤ ₹8L", "marks": ""}, {"dept": "Pimpri Chinchwad Municipal Corporation", "name": "Prize money for 10th standard students (SSC / CBSE / ICSE) scoring 80%–90%", "grades": "10th", "cat": "", "income": "", "marks": "80–90%"}, {"dept": "Pimpri Chinchwad Municipal Corporation", "name": "Prize money for 12th standard students (SSC / CBSE / ICSE) scoring 80%–90%", "grades": "12th", "cat": "", "income": "", "marks": "80–90%"}, {"dept": "Child Welfare Committee (CWC)", "name": "Krantijyoti Savitribai Phule Balsangopan Yojana", "grades": "", "cat": "", "income": "", "marks": ""}];
+var COLLEGES = ["Dr D.Y. Patil Arts, Commerce and Science College, Pimpri", "Dr. D. Y. Patil Arts, Commerce & Science Women's College, Pimpri", "JSPM Rajarshi Shahu College Of Engineering, Tathawade", "PDEA's Annasaheb Magar Mahavidyalaya, Hadapsar", "Sir Parashurambhau College, Tilak Road", "Bhimashankar Ayurved College, Hospital & Research Center, Ghodegaon", "Nowrosjee Wadia College, Pune", "Indrayani Vidya Mandir's Indrayani Mahavidyalaya, Talegaon", "Dnyandeep Sec. & Sou. Anusaya Wadhokar Higher Secondary School, Rupeenagar", "Dr. B.N. Purandare Arts, Smt. S.G. Gupta Commerce and Smt. Shardaben Amrutlal Mithaiwala Science College", "Prof. Ramkrishna More College of Arts, Commerce & Science, Akurdi", "Shri Bhairavnath Secondary & Higher Secondary School, Bhosari, Pune", "Bhimashankar Vidyamandir & Shri T.S. Borhade Jr College, Shinoli", "AISSMS College of Engineering", "B.D. Kale College, Ghodegaon", "Baburaoji Gholap College, Sangvi, Pune", "Annasaheb Awate Arts, Commerce & Hutatma Babu Genu Science College, Manchar", "Government College of Engineering & Research, Avasari Khurd", "Dr. D. Y. Patil Institute of Technology, Pimpri", "Bhamchandra Madhymik Vidyhalay, Arts and commerce College, Bhamboli", "Chanakya Classes, Nigdi", "Rajmata Jijau College, Landewadi, Bhosari", "Mamasaheb Mohol Mahavidyalaya, Paud Road", "Sau HG Gaikwad High, Kasari", "Vidyadham Prashala, Shirur", "Rajiv Gandhi Academy of e-learning, Sahakarnagar, Pune", "RJSPM'S Arts Comm & Sci Jr College, Landewadi, Bhosari", "Shri Fattechand Jain Vidyalaya Junior College, Chinchwadgaon", "Modern College of Arts Science & Commerce", "ASM College Pimpri", "Saraswati Bhuvan English Medium School", "NESS Wadia College of Commerce", "Shri Mhalsakant Secondary and Higher Secondary School, Akurdi", "Jai Hind Junior College", "Rajarambappu Institute of Technology (Polytechnic), Lohegaon, Pune", "Sree Swami Samarth English Medium School", "SPG International Public School, Bhosari", "Government Polytechnic Avasari", "Shardabai Pawar Mahila Mahavidyalaya, Shardanagar Tal - Baramati, Dist - Pune 413 115", "Hutatma Rajguru Mahavidyalaya, Rajgurunagar", "M.E.S. Abasaheb Garware College", "Pune Institute of Computer Technology, Dhankavdi, Pune", "Brihan Maharashtra College of Commerce (BMCC)", "Janata Shikshan Sansthas Smt Chandrakala Kishorilal Goyal, Arts and Commerce College, Dapodi", "Vitthalrao Shiverkar Bhairoba Nala Pune 01", "Zeal College of Engineering, Narhe", "Indian Institute of Public Health Gandhinagar", "Janki Devi Arts, commerce & Science Junior College Bhosari", "Marathwada Mitramandal Junior College of Commerce & Science, Thergaon Pune", "SNBP International School & College, Chikhali", "Modern College of Arts, Science & Commerce College Shivajinagar Pune", "Marathwada Mitra Mandal's College of Engineering, Karvenagar", "Gramonnati Mandal's Arts, Commerce and Science College, Narayangaon"];
+function escH(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
+function collegeOptions(first){ return (first?'<option value="">'+first+'</option>':'')+COLLEGES.map(function(c){ return '<option>'+escH(c)+'</option>'; }).join('')+'<option>Other</option>'; }
+function schemeOptions(){
+  var depts=[]; SCHEMES.forEach(function(s){ if(depts.indexOf(s.dept)<0) depts.push(s.dept); });
+  return '<option value="">Select scheme…</option>'+depts.map(function(d){
+    return '<optgroup label="'+escH(d)+'">'+SCHEMES.filter(function(s){ return s.dept===d; }).map(function(s){ return '<option>'+escH(s.name)+'</option>'; }).join('')+'</optgroup>';
+  }).join('')+'<optgroup label="Other"><option>Other</option></optgroup>';
+}
+function renderCatalogue(){
+  var host=document.getElementById('catList'); if(!host) return;
+  host.innerHTML=SCHEMES.map(function(s,i){
+    var meta=[s.cat?'Category: '+s.cat:'', s.income?'Income '+s.income:'', s.grades?'Grades: '+s.grades:'', s.marks?'Marks: '+s.marks:''].filter(Boolean).map(function(m){ return '<span>'+escH(m)+'</span>'; }).join('');
+    return '<div class="card" style="margin-bottom:12px"><div class="sch-card"><div class="body">'+
+      '<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><h4>'+escH(s.name)+'</h4><button class="btn btn-ghost btn-sm" onclick="editScholarship('+i+')">Edit</button></div>'+
+      '<div style="font-size:13px;color:var(--muted)">'+escH(s.dept)+'</div><div class="meta">'+(meta||'<span>Criteria as per the scheme GR</span>')+'</div></div></div></div>';
+  }).join('');
+}
+function initMasters(){
+  renderCatalogue();
+  ['onbCollege','schCollege'].forEach(function(id){ var el=document.getElementById(id); if(el && !el.dataset.filled){ el.innerHTML=collegeOptions('Search & select college…'); el.dataset.filled='1'; } });
+  var sch=document.getElementById('schScheme'); if(sch && !sch.dataset.filled){ var v=sch.onchange; sch.innerHTML=schemeOptions(); sch.dataset.filled='1'; }
+  var mis=document.getElementById('misCollege'); if(mis && !mis.dataset.filled){ mis.innerHTML='<option>All Colleges</option>'+COLLEGES.map(function(c){ return '<option>'+escH(c)+'</option>'; }).join(''); mis.dataset.filled='1'; }
+}
+document.addEventListener('DOMContentLoaded', initMasters);
+function editScholarship(i){
+  var s=SCHEMES[i]; if(!s) return;
+  var f=document.getElementById('catForm'); if(!f) return;
+  f.style.display=''; var title=f.querySelector('.form-sec-title'); if(title) title.textContent='Edit Scholarship';
+  var ins=f.querySelectorAll('input');
+  ins[0].value=s.name; ins[1].value=s.dept; ins[3].value=s.cat; ins[5].value=s.grades;
+  f.scrollIntoView({behavior:'smooth'});
 }
 
 // Generic lb-tools helpers (the Filter / Sort / refresh icon-buttons that appear in list-view toolbars).
@@ -6933,6 +6905,7 @@ function schLookup(email){
   if(help) help.textContent='Filled from '+f.onbFullName+"'s onboarding record.";
 }
 function schInit(){
+  if(typeof initMasters==='function') initMasters();
   var dl=document.getElementById('schStudents');
   if(dl && !dl.dataset.filled){ dl.innerHTML=Object.keys(schStudentRecords()).map(function(e){ return '<option value="'+e+'">'; }).join(''); dl.dataset.filled='1'; }
   // Reuse the gender master populated for onboarding (same DocType in production).
@@ -7039,11 +7012,41 @@ function makeScrollSpy(formId, metaId){
   document['_'+formId+'_spy']=updateActive; // expose so branch toggles can force a refresh
   updateActive();
 }
+// The Data Entry form is the single record of a submitted application; it is opened from that
+// application's row in the Applications tab and writes its ID / date / status back there on save.
+var SCH_TARGET=null;
+var SCH_APPS={ms:{student:'aarti.pawar@gmail.com', scheme:'Maharashtra State Minority', label:'Maharashtra State Minority Scholarship'}};
+function openSchFor(key){
+  SCH_TARGET=key; go('f-scholarship');
+  setTimeout(function(){
+    var a=SCH_APPS[key]; if(!a) return;
+    var em=document.getElementById('schStudentEmail'); if(em){ em.value=a.student; schLookup(a.student); }
+    var n=document.getElementById('schTargetNote'); if(n){ n.style.display=''; n.innerHTML='Recording the submitted application: <b>'+a.label+'</b>. Saving updates its row in the Applications tab.'; }
+  },50);
+}
 function schSubmit(){
   const chip=document.getElementById('schMobileVerify');
   if(chip && chip.classList.contains('bad')){
     alert('Mobile number is invalid — please correct it before saving.');
     document.getElementById('sch-student').scrollIntoView({behavior:'smooth'});
+    return;
+  }
+  if(SCH_TARGET){
+    var key=SCH_TARGET, a=SCH_APPS[key];
+    var id=(document.getElementById('schAppId')||{}).value||'', dt=(document.getElementById('schSubDate')||{}).value||'', st=(document.getElementById('schAppStatus')||{}).value||'Under Scrutiny';
+    if(!id.trim()){ alert('Application ID is required: copy it from the government portal.'); return; }
+    var c=CASES.filter(function(x){ return x.student==='Aarti Pawar' && x.scheme===a.scheme; })[0];
+    if(c){ c.status=st; c.appId=id.trim(); _rerenderAll(); }
+    var item=document.querySelector('#fp-apps .app-acc-item[data-app="'+key+'"]');
+    if(item){
+      var pill=item.querySelector('.app-acc-head .pill'); if(pill) pill.innerHTML='<span class="pdot"></span>'+st;
+      var sm=item.querySelector('.sr-name small'); if(sm) sm.textContent=id.trim()+' · Submitted '+(dt?hrDate(dt):'today')+' · '+st;
+      var p=item.querySelector('.app-acc-body > p'); if(p) p.textContent='Recorded from the Scholarship Data Entry form: Application ID '+id.trim()+', submitted '+(dt?hrDate(dt):'today')+'.';
+      var b=item.querySelector('.app-acc-body > button'); if(b) b.textContent='Edit on the Scholarship Data Entry form';
+    }
+    SCH_TARGET=null; var n=document.getElementById('schTargetNote'); if(n) n.style.display='none';
+    alert('✅ Saved. '+a.label+' is now '+st+' in the Applications tab.');
+    go('f-student'); setTimeout(function(){ appSelectInTab(key); },60);
     return;
   }
   alert('✅ Scholarship data entry saved. The application now appears under Applications → Under Scrutiny.');
@@ -7162,6 +7165,12 @@ function onbSubmit(){
     const sec=document.getElementById('sec-personal'); if(sec) sec.scrollIntoView({behavior:'smooth'});
     return;
   }
+  const aad=document.getElementById('onbAadhaar');
+  if(aad && aad.value.trim() && !/^\d{12}$/.test(aad.value.replace(/\s/g,''))){
+    alert('Aadhaar Number must be 12 digits.');
+    const sec=document.getElementById('sec-personal'); if(sec) sec.scrollIntoView({behavior:'smooth'});
+    return;
+  }
   // Fellow assignment is required on both tracks (Point 5) — a student must never be silently unassigned.
   const asg = document.getElementById('onbAssignFellow');
   if(asg && !asg.value){
@@ -7234,7 +7243,7 @@ function filterVerify(which,btn){
   });
   document.getElementById('verifyEmpty').style.display=shown?'none':'block';
 }
-function toggleCatForm(){ const f=document.getElementById('catForm'); f.style.display = f.style.display==='none'?'':'none'; if(f.style.display==='')f.scrollIntoView({behavior:'smooth',block:'nearest'}); }
+function toggleCatForm(){ const f=document.getElementById('catForm'); const ti=f.querySelector('.form-sec-title'); if(ti) ti.textContent='New Scholarship'; f.style.display = f.style.display==='none'?'':'none'; if(f.style.display==='')f.scrollIntoView({behavior:'smooth',block:'nearest'}); }
 // All students filter (stage + fellow)
 function filterAStu(){
   const st=document.getElementById('aStuStage').value, fe=document.getElementById('aStuFellow').value; let shown=0;
